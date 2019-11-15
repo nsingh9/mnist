@@ -2,13 +2,13 @@ rm(list = ls())
 
 ################################## Packages to install ##################################
 
-library(randomForest)
-library(matrixStats)
-library(tidyverse)
-library(Rborist)
-library(dslabs)
-library(caret)
-library(e1071)
+if(!require(randomForest)) install.packages("randomForest")
+if(!require(matrixStats)) install.packages("matrixStats")
+if(!require(tidyverse)) install.packages("tidyverse")
+if(!require(Rborist)) install.packages("Rborist")
+if(!require(dslabs)) install.packages("dslabs")
+if(!require(caret)) install.packages("caret")
+if(!require(e1071)) install.packages("e1071")
 
 ################################## Loading Data ##################################
 
